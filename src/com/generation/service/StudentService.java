@@ -24,9 +24,17 @@ public class StudentService
         return null;
     }
 
-    public void showSummary()
-    {
+    public void showSummary() {
         //TODO implement
+        System.out.println( "Student Summary" );
+        students.forEach((key, value) -> {
+            System.out.println("key " + key);
+            System.out.println("Value " + value);
+        });
+//        for (String key : students.keySet()) {
+//            Student student = students.get(key);
+//            System.out.println(student);
+//        }
     }
 
     public void enrollToCourse( String studentId, Course course )
